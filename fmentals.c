@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <limits.h>
-extern int var2;
+#include <stdlib.h>
+static int var1;//global static is use to restrict the acces from another file.
 int main(void){
-
+    
     // int var=4;
     // int var1=1;
     // var=5;
@@ -26,7 +27,7 @@ int main(void){
     // printf("size of long int:%d to %d",few,six);
     // printf("size of unsigned short int:%lu to %lu",seven,eight);
     // printf("size of unsigned long int:%lu to %lu",nine,ten);
-
+ 
 //
 //-------------------------------float ,double ,long double
 //
@@ -57,12 +58,27 @@ int main(void){
 //
 //auto and extern variable modifier
 //
-    int var1;
-    
-    printf("%d\n",var2);
+    // int var1;
+    // extern int var2;//creat new file inside the folder and define a value
+    // printf("%d\n",var1);
+    // printf("%d",var2); 
+//
+//static variable modifier
+//
 
-
-
-    return 0;
+    increment();
+    increment();
+    increment();
+    return 0;   
+}
+int increment(){
+//static preser the value between calls
+    // static int var2;
+    // var2=var2+1;
+    // printf("the value is:%d\n",var2);
+//normal variable in function it becomes zero after function ends each time wee call the function it ony zero.
+    int var2=0;
+    var2=var2+1;
+    printf("the value is:%d\n",var2);
 
 }

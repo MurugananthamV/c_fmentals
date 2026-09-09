@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <limits.h>
+extern int var2;
 int main(void){
-    
+
     // int var=4;
     // int var1=1;
     // var=5;
@@ -25,7 +26,7 @@ int main(void){
     // printf("size of long int:%d to %d",few,six);
     // printf("size of unsigned short int:%lu to %lu",seven,eight);
     // printf("size of unsigned long int:%lu to %lu",nine,ten);
- 
+
 //
 //-------------------------------float ,double ,long double
 //
@@ -50,8 +51,16 @@ int main(void){
 //
 //if value exeed the range
 //
-    short int i=123456789;
-    printf("%d",i);
+    // short int i=123456789;
+    // printf("%d",i);
+//
+//
+//auto and extern variable modifier
+//
+    int var1;
+    
+    printf("%d\n",var2);
+
 
 
     return 0;

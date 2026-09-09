@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <limits.h>
 int main(void){
+    
     // int var=4;
     // int var1=1;
     // var=5;
     // printf("%d",var);
     // printf("hello embedded World\n");
-    // return 0;
+
+
 // -----------------------------------------#size of int
     // int one=INT_MIN;
     // int two=INT_MAX;
@@ -23,11 +25,35 @@ int main(void){
     // printf("size of long int:%d to %d",few,six);
     // printf("size of unsigned short int:%lu to %lu",seven,eight);
     // printf("size of unsigned long int:%lu to %lu",nine,ten);
+ 
+//
+//-------------------------------float ,double ,long double
+//
+//
+    // unsigned int i=1;
+    // int j=-3;
+    // printf("%u",i+j);
+//
+//
+//
+    // float var1=3.142345;
+    // double var2=3.23456723;
+    // long double var3=3.14237890123578323578;
+    // printf("%f\n",var1);
+    // printf("%.3f\n",var2);
+    // printf("%.10Lf",var3);
+//
+//print function print and return the valu of charachter
+//
+    // printf("%d",printf("%s","kumaran"));
+    // printf("%d",printf("%d",1234));
+//
+//if value exeed the range
+//
+    short int i=123456789;
+    printf("%d",i);
 
-//
-//-------------------------------
-//
-//
 
+    return 0;
 
 }

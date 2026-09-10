@@ -5,16 +5,21 @@
 //
 //===========================Constants
 //
-#define STRING "Hello C!"//preeprocessor replace STRING to "Hello C!"
-#define KUMARAN "%s \n"
+// #define STRING "Hello C!"//preeprocessor replace STRING to "Hello C!"
+// #define KUMARAN "%s \n"
+// //
+// //==========================Multie line constants
+// //
+// #define MAXIMUM(x,y) if(x>y) \
+//                         printf("%d is greater than %d.\n",x,y);\
+//                      else \
+//                         printf("%d is greater than %d.\n",y,x);\
 //
-//==========================Multie line constants
+//===========================Static
 //
-#define MAXIMUM(x,y) if(x>y) \
-                        printf("%d is greater than %d.\n",x,y);\
-                     else \
-                        printf("%d is greater than %d.\n",y,x);\
-
+static int var;//stored in bss
+static int var=30;//move to initialized
+static int var;
 int main(void){
     
     // int var=4;
@@ -112,12 +117,17 @@ int main(void){
 //
 //========================input function scanf
 //
-    int var;
-    scanf("%d",&var);
+    // int var;
+    // scanf("%d",&var);
+    // printf("%d",var);
+    
+//
+//=======================Static intialized memory and unintialized mamory
+//
+    static int var=50;
     printf("%d",var);
+
     return 0;
-
-
 
 }
 // int increment(){

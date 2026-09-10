@@ -1,7 +1,20 @@
 #include <stdio.h>
 #include <limits.h>
 #include <stdlib.h>
-static int var1;//global static is use to restrict the acces from another file.
+// static int var1;//global static is use to restrict the acces from another file.
+//
+//===========================Constants
+//
+#define STRING "Hello C!"//preeprocessor replace STRING to "Hello C!"
+#define KUMARAN "%s \n"
+//
+//==========================Multie line constants
+//
+#define MAXIMUM(x,y) if(x>y) \
+                        printf("%d is greater than %d.\n",x,y);\
+                     else \
+                        printf("%d is greater than %d.\n",y,x);\
+
 int main(void){
     
     // int var=4;
@@ -66,19 +79,36 @@ int main(void){
 //static variable modifier
 //
 
-    increment();
-    increment();
-    increment();
-    return 0;   
-}
-int increment(){
-//static preser the value between calls
-    // static int var2;
-    // var2=var2+1;
-    // printf("the value is:%d\n",var2);
-//normal variable in function it becomes zero after function ends each time wee call the function it ony zero.
-    int var2=0;
-    var2=var2+1;
-    printf("the value is:%d\n",var2);
+    // increment();
+    // increment();
+    // increment();
+//
+//
+//=============================CONSTANTS
+//
 
+    // printf(KUMARAN,STRING);
+    // MAXIMUM(10,15);//constant as function
+//
+//built in constants
+//
+    printf("TIME:%s\n",__TIME__);
+    printf("DATE:%s",__DATE__);
+    return 0;
+
+
+
+
+    // return 0;   
 }
+// int increment(){
+// //static preser the value between calls
+//     static int var2;
+//     var2=var2+1;
+//     printf("the value is:%d\n",var2);
+// // normal variable in function it becomes zero after function ends each time wee call the function it ony zero.
+//     int var2=0;
+//     var2=var2+1;
+//     printf("the value is:%d\n",var2);
+
+// }

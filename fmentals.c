@@ -92,14 +92,29 @@ int main(void){
 //
 //built in constants
 //
-    printf("TIME:%s\n",__TIME__);
-    printf("DATE:%s",__DATE__);
+    // printf("TIME:%s\n",__TIME__);
+    // printf("DATE:%s",__DATE__);
+//
+//
+//========================Constant
+//
+//
+    // const int a=10;//once defines we cant change the velue of the constant variable its leads to error
+//
+//=======================OCTALE AND HEXADECIMAL
+//
+    int num1=045;
+    int num2=0x345A;
+    printf("%d\n",num1);// when we use %d it conver octal to decimal
+    printf("%o\n",num1);//print the exact vale
+    printf("%x\n",num2);//print hexa dacima in small characher
+    printf("%X",num2);//print hexa decima in capitalized charachter
+
     return 0;
 
 
 
 
-    // return 0;   
 }
 // int increment(){
 // //static preser the value between calls

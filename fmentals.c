@@ -131,18 +131,39 @@ int main(void){
 //
 //-----------------------------OPERATORS(ARITHMETIC)
 //
-    int a,b;
-    printf("Enter the first number:\n");
-    scanf("%d",&a);
-    printf("Enter the second number:\n");
-    scanf("%d",&b);
-    printf("a+b=%d\n",a+b);
-    printf("a-b=%d\n",a-b);
-    printf("axb=%d\n",a*b);
-    printf("a/b=%d\n",a/b);
-    printf("a modulo b=%d",a%b);
+    // int a,b;
+    // printf("Enter the first number:\n");
+    // scanf("%d",&a);
+    // printf("Enter the second number:\n");
+    // scanf("%d",&b);
+    // printf("a+b=%d\n",a+b);
+    // printf("a-b=%d\n",a-b);
+    // printf("axb=%d\n",a*b);
+    // printf("a/b=%d\n",a/b);
+    // printf("a modulo b=%d",a%b);
+//
+//================================increment operator and decrement operator
+//
+    // int a=4,b=3;
+    // printf("%d\n",a+++b);
+//
+//===============================relational operator
+// 
+    int a=10,b=20,c=30;
+    if(a>b && a>c){
+        printf("a is greater");
+    }
+    else if (b>a && b>c)
+    {
+        printf("b is greater");
 
+    }
+    else{
+        printf("c is greater");
+    }
     return 0;
+
+
 }
 // int increment(){
 // //static preser the value between calls

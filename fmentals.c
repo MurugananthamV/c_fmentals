@@ -124,11 +124,25 @@ int main(void){
 //
 //=======================Static intialized memory and unintialized mamory
 //
-    static int var=50;
-    printf("%d",var);
+    // static int var=50;//prefr local variable over global
+    // printf("%d",var);
+
+    
+//
+//-----------------------------OPERATORS(ARITHMETIC)
+//
+    int a,b;
+    printf("Enter the first number:\n");
+    scanf("%d",&a);
+    printf("Enter the second number:\n");
+    scanf("%d",&b);
+    printf("a+b=%d\n",a+b);
+    printf("a-b=%d\n",a-b);
+    printf("axb=%d\n",a*b);
+    printf("a/b=%d\n",a/b);
+    printf("a modulo b=%d",a%b);
 
     return 0;
-
 }
 // int increment(){
 // //static preser the value between calls

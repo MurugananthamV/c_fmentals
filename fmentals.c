@@ -149,19 +149,38 @@ int main(void){
 //
 //===============================relational operator
 // 
-    int a=10,b=20,c=30;
-    if(a>b && a>c){
-        printf("a is greater");
-    }
-    else if (b>a && b>c)
-    {
-        printf("b is greater");
+    // int a=10,b=20,c=30;
+    // if(a>b && a>c){
+    //     printf("a is greater");
+    // }
+    // else if (b>a && b>c)
+    // {
+    //     printf("b is greater");
 
-    }
-    else{
-        printf("c is greater");
-    }
-    return 0;
+    // }
+    // else{
+    //     printf("c is greater");
+    // }
+//
+//==================================Condirional operatords
+//
+    // int var=75;
+    // int var1=30;
+    // int num;
+    // num=sizeof(var)?(var1>20?((var==75)?'a':1):1):1;
+    // printf("%d",num);
+//
+//============================COMMA operator
+//
+    // int var=(printf("%s\n","Hi i am Murugan!"),10);
+    // printf("%d",var);
+//
+//
+    int var;
+    int num;
+    num=(var=15,var+35);
+    printf("%d",num);
+    return 0;   
 
 
 }

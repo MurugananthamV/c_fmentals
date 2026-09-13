@@ -176,10 +176,24 @@ int main(void){
     // printf("%d",var);
 //
 //
-    int var;
-    int num;
-    num=(var=15,var+35);
-    printf("%d",num);
+    // int var;
+    // int num;
+    // num=(var=15,var+35);
+    // printf("%d",num);
+//
+//================================Prcedence of operator
+//  
+    int fun1(){
+        printf("Hi\n");
+        return 1;
+    }
+    int fun2(){
+        printf("Hello\n");
+        return 1;
+    }
+    int a;
+    a=fun1()+fun2();
+    printf("%d",a);
     return 0;   
 
 

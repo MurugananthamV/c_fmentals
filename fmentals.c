@@ -17,9 +17,9 @@
 //
 //===========================Static
 //
-static int var;//stored in bss
-static int var=30;//move to initialized
-static int var;
+// static int var;//stored in bss
+// static int var=30;//move to initialized
+// static int var;
 int main(void){
     
     // int var=4;
@@ -197,17 +197,111 @@ int main(void){
 //
 //
 //
-    int a=10,b=20,c=30,d=40;
-    if(a <= b == d > c){
-        printf("TRUE");
-    }
-    else{
-        printf("FALSE");
-    }
+    // int a=10,b=20,c=30,d=40;
+    // if(a <= b == d > c){
+    //     printf("TRUE");
+    // }
+    // else{
+    //     printf("FALSE");
+    // }
+    
+//
+// according to C99 standard the v++ is not evaluated
+    // int var=5;
+    // int var1=sizeof(var++);
+    // printf("%d %d",var,var1);
+//
+//
+    // int a=1;
+    // int b=1;
+    // int c=++a || b++;
+    // int d=b-- && --a;
+    // printf("%d %d %d %d",d ,c ,b ,a );
+//
+//========================Switch and loops
+//
+    
+
+
+    
+    int n=1;
+    do
+    {
+        switch (n)
+        {
+        case 1:
+            printf("        ==============\n");
+            printf("        |    0.Exit   |\n");
+            printf("        |    1.Menue  |\n");
+            printf("        |    2.Files  |\n");
+            printf("        |    3.Mail   |\n");
+            printf("        ==============\n\n");
+            printf("                            ==============\n");
+            printf("                            | Enter Here: |\n");
+            printf("                            ==============\n");
+            printf("                            |\n");
+            printf("                            --->");
+            scanf("%d",&n);
+            break;
+        case 2:
+            printf("                                        =========================\n"); 
+            printf("                                        =======FILE MANAGER======\n");
+            printf("                                        =========================\n"); 
+            printf("        ==============\n");
+            printf("        |    0.Exit   |\n");
+            printf("        |    1.Menue  |\n");
+            printf("        |    3.Mail   |\n");
+            printf("        ==============\n\n");
+            printf("                            ==============\n");
+            printf("                            | Enter Here: |\n");
+            printf("                            ==============\n");
+            printf("                            |\n");
+            printf("                            --->");
+            scanf("%d",&n);
+            break;
+        case 3:
+            printf("                                        ==================\n");
+            printf("                                        =======Gmail======\n");
+            printf("                                        ==================\n\n");
+            printf("        ==============\n");
+            printf("        |    0.Exit   |\n");
+            printf("        |    1.Menue  |\n");
+            printf("        |    2.Files  |\n");
+            printf("        ==============\n\n");
+            printf("                            ==============\n");
+            printf("                            | Enter Here: |\n");
+            printf("                            ==============\n");
+            printf("                            |\n");
+            printf("                            --->");
+            scanf("%d",&n);
+            break;
+        default:
+            printf("Wrong Choice Pleas Enter Valid Number Mentioned In Below!\n\n"); 
+            printf("        ==============\n");
+            printf("        |    0.Exit   |\n");
+            printf("        |    1.Menue  |\n");
+            printf("        |    2.Files  |\n");
+            printf("        |    3.Mail   |\n");
+            printf("        ==============\n\n");
+            printf("                            ==============\n");
+            printf("                            | Enter Here: |\n");
+            printf("                            ==============\n");
+            printf("                            |\n");
+            printf("                            --->");
+            scanf("%d",&n);
+
+            break;
+        }
+
+    }while(n!=0);
+    printf("                                                  ==============\n");
+    printf("                                                  |  THANK YOU |\n");
+    printf("                                                  ==============\n");
     return 0;   
 
 
 }
+
 // int increment(){
 // //static preser the value between calls
 //     static int var2;

@@ -224,81 +224,126 @@ int main(void){
 
 
     
-    int n=1;
-    do
-    {
-        switch (n)
-        {
-        case 1:
-            printf("        ==============\n");
-            printf("        |    0.Exit   |\n");
-            printf("        |    1.Menue  |\n");
-            printf("        |    2.Files  |\n");
-            printf("        |    3.Mail   |\n");
-            printf("        ==============\n\n");
-            printf("                            ==============\n");
-            printf("                            | Enter Here: |\n");
-            printf("                            ==============\n");
-            printf("                            |\n");
-            printf("                            --->");
-            scanf("%d",&n);
-            break;
-        case 2:
-            printf("                                        =========================\n"); 
-            printf("                                        =======FILE MANAGER======\n");
-            printf("                                        =========================\n"); 
-            printf("        ==============\n");
-            printf("        |    0.Exit   |\n");
-            printf("        |    1.Menue  |\n");
-            printf("        |    3.Mail   |\n");
-            printf("        ==============\n\n");
-            printf("                            ==============\n");
-            printf("                            | Enter Here: |\n");
-            printf("                            ==============\n");
-            printf("                            |\n");
-            printf("                            --->");
-            scanf("%d",&n);
-            break;
-        case 3:
-            printf("                                        ==================\n");
-            printf("                                        =======Gmail======\n");
-            printf("                                        ==================\n\n");
-            printf("        ==============\n");
-            printf("        |    0.Exit   |\n");
-            printf("        |    1.Menue  |\n");
-            printf("        |    2.Files  |\n");
-            printf("        ==============\n\n");
-            printf("                            ==============\n");
-            printf("                            | Enter Here: |\n");
-            printf("                            ==============\n");
-            printf("                            |\n");
-            printf("                            --->");
-            scanf("%d",&n);
-            break;
-        default:
-            printf("Wrong Choice Pleas Enter Valid Number Mentioned In Below!\n\n"); 
-            printf("        ==============\n");
-            printf("        |    0.Exit   |\n");
-            printf("        |    1.Menue  |\n");
-            printf("        |    2.Files  |\n");
-            printf("        |    3.Mail   |\n");
-            printf("        ==============\n\n");
-            printf("                            ==============\n");
-            printf("                            | Enter Here: |\n");
-            printf("                            ==============\n");
-            printf("                            |\n");
-            printf("                            --->");
-            scanf("%d",&n);
+    // int n=1;
+    // do
+    // {
+    //     switch (n)
+    //     {
+    //     case 1:
+    //         printf("        ==============\n");
+    //         printf("        |    0.Exit   |\n");
+    //         printf("        |    1.Menue  |\n");
+    //         printf("        |    2.Files  |\n");
+    //         printf("        |    3.Mail   |\n");
+    //         printf("        ==============\n\n");
+    //         printf("                            ==============\n");
+    //         printf("                            | Enter Here: |\n");
+    //         printf("                            ==============\n");
+    //         printf("                            |\n");
+    //         printf("                            --->");
+    //         scanf("%d",&n);
+    //         break;
+    //     case 2:
+    //         printf("                                        =========================\n"); 
+    //         printf("                                        =======FILE MANAGER======\n");
+    //         printf("                                        =========================\n"); 
+    //         printf("        ==============\n");
+    //         printf("        |    0.Exit   |\n");
+    //         printf("        |    1.Menue  |\n");
+    //         printf("        |    3.Mail   |\n");
+    //         printf("        ==============\n\n");
+    //         printf("                            ==============\n");
+    //         printf("                            | Enter Here: |\n");
+    //         printf("                            ==============\n");
+    //         printf("                            |\n");
+    //         printf("                            --->");
+    //         scanf("%d",&n);
+    //         break;
+    //     case 3:
+    //         printf("                                        ==================\n");
+    //         printf("                                        =======Gmail======\n");
+    //         printf("                                        ==================\n\n");
+    //         printf("        ==============\n");
+    //         printf("        |    0.Exit   |\n");
+    //         printf("        |    1.Menue  |\n");
+    //         printf("        |    2.Files  |\n");
+    //         printf("        ==============\n\n");
+    //         printf("                            ==============\n");
+    //         printf("                            | Enter Here: |\n");
+    //         printf("                            ==============\n");
+    //         printf("                            |\n");
+    //         printf("                            --->");
+    //         scanf("%d",&n);
+    //         break;
+    //     default:
+    //         printf("Wrong Choice Pleas Enter Valid Number Mentioned In Below!\n\n"); 
+    //         printf("        ==============\n");
+    //         printf("        |    0.Exit   |\n");
+    //         printf("        |    1.Menue  |\n");
+    //         printf("        |    2.Files  |\n");
+    //         printf("        |    3.Mail   |\n");
+    //         printf("        ==============\n\n");
+    //         printf("                            ==============\n");
+    //         printf("                            | Enter Here: |\n");
+    //         printf("                            ==============\n");
+    //         printf("                            |\n");
+    //         printf("                            --->");
+    //         scanf("%d",&n);
 
-            break;
-        }
+    //         break;
+    //     }
 
-    }while(n!=0);
-    printf("                                                  ==============\n");
-    printf("                                                  |  THANK YOU |\n");
-    printf("                                                  ==============\n");
+    // }while(n!=0);
+    // printf("                                                  ==============\n");
+    // printf("                                                  |  THANK YOU |\n");
+    // printf("                                                  ==============\n");
+//
+//
+//
+//
+    // int i=1024;
+    // for(; i;i>>=1){//i=i>>1
+    //     printf("Hello Wordl!\n");
+    // }
+
+//
+//
+//
+    // int x;
+    // for(x=0;x<20;x++){
+    //     switch (x)
+    //     {
+    //     case 0:x+=5l;
+    //     case 1:x+=3;
+    //     case 2:x+=2;
+    //     default:x+=2;
+    //     }
+    // printf("%d\n",x);
+    // }
+//
+//
+//
+    // int i=-1;
+    // while(i<=10){
+    //     if(i>=0)
+    //         break;
+    //     else{
+    //         i++;
+    //         continue;
+    //     }
+    //     printf("Kumaran");
+    // }
+
+//
+//
+//
+    int x=10;
+    if(x==10);x=5;
+    if(x==10) x++;
+    if(x==5) x++;
+    else x+=2;
+    printf("%d",x);
     return 0;   
-
 
 }
 

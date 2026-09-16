@@ -346,21 +346,61 @@ int main(void){
 //
 //
 //
-    int i,j,k;
-    scanf("%d",&j);
-    for(i=1;i<=j;i++){
-        for(k=1;k<=2*j-1;k++){
-            if(k>=j-(i-1) && k<=j+(i-1)){
-                printf("*");
-            }
-            else{
-                printf(" ");
-            }
-        }
-        printf("\n");
+    // int i,j,k;
+    // scanf("%d",&j);
+    // for(i=1;i<=j;i++){
+    //     for(k=1;k<=2*j-1;k++){
+    //         if(k>=j-(i-1) && k<=j+(i-1)){
+    //             printf("*");
+    //         }
+    //         else{
+    //             printf(" ");
+    //         }
+    //     }
+    //     printf("\n");
+    // }
+//
+//check weather the number is palindrom or not
+//
+    // int n,r=0,i,j;
+    // printf("Enter The Number:");
+    // scanf("%d",&n);
+    // i=n;
+    // while(i!=0){
+    //     j=i%10;
+    //     r=r*10+j;
+    //     i=i/10;
+    // }
+    // if(r==n)
+    //     printf("Its a palindrom");
+    // else
+    //     printf("its not a palindrom");
+//
+//check weather the number is amstrong or not
+//
+    int num,q,cnt=0,i,j,rem=0,res=0,pow;
+    printf("Enter the Number need to check Amstrong:");
+    scanf("%d",&num);
+    q=num;
+    while(q!=0){
+        q=q/10;
+        cnt++;
     }
-    return 0;   
-
+    q=num;
+    for(i=1;i<=cnt;i++){
+        rem=q%10;
+        pow=1;
+        for(j=1;j<=cnt;j++){
+            pow=pow*rem;
+        }
+        res=res+pow;
+        q=q/10;
+    }
+    if(res==num)
+        printf("The given number is palindrom");
+    else
+        printf("Not palindrom");
+    return 0;
 }
 
 // int increment(){

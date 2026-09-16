@@ -337,12 +337,28 @@ int main(void){
 //
 //
 //
-    int x=10;
-    if(x==10);x=5;
-    if(x==10) x++;
-    if(x==5) x++;
-    else x+=2;
-    printf("%d",x);
+    // int x=10;
+    // if(x==10);x=5;//these two are separate not inside the condition
+    // if(x==10) x++;
+    // if(x==5) x++;
+    // else x+=2;
+    // printf("%d",x);
+//
+//
+//
+    int i,j,k;
+    scanf("%d",&j);
+    for(i=1;i<=j;i++){
+        for(k=1;k<=2*j-1;k++){
+            if(k>=j-(i-1) && k<=j+(i-1)){
+                printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
     return 0;   
 
 }

@@ -378,28 +378,104 @@ int main(void){
 //
 //check weather the number is amstrong or not
 //
-    int num,q,cnt=0,i,j,rem=0,res=0,pow;
-    printf("Enter the Number need to check Amstrong:");
-    scanf("%d",&num);
-    q=num;
-    while(q!=0){
-        q=q/10;
-        cnt++;
-    }
-    q=num;
-    for(i=1;i<=cnt;i++){
-        rem=q%10;
-        pow=1;
-        for(j=1;j<=cnt;j++){
-            pow=pow*rem;
+    // int num,q,cnt=0,i,j,rem=0,res=0,pow;
+    // printf("Enter the Number need to check Amstrong:");
+    // scanf("%d",&num);
+    // q=num;
+    // while(q!=0){
+    //     q=q/10;
+    //     cnt++;
+    // }
+    // q=num;
+    // for(i=1;i<=cnt;i++){
+    //     rem=q%10;
+    //     pow=1;
+    //     for(j=1;j<=cnt;j++){
+    //         pow=pow*rem;
+    //     }
+    //     res=res+pow;
+    //     q=q/10;
+    // }
+    // if(res==num)
+    //     printf("The given number is palindrom");
+    // else
+    //     printf("Not palindrom");
+//
+//check weather the given number is strong or not 
+//
+    // int num,res=0,rem=1,q,i,fact=1;
+    // printf("Enter the number:");
+    // scanf("%d",&num);
+    // q=num;
+    // while(q!=0){
+    //     rem=q%10;
+    //     for(i=1;i<=rem;i++){
+    //         fact=fact*i;
+    //     }
+    //     res=res+fact;
+    //     fact=1;
+    //     q=q/10;
+    // }
+    // if(res==num)
+    //     printf("Strong number");
+    // else
+        // printf("not amstrong");
+//
+//check weather the number is prime or not
+//
+
+
+
+//
+//addin two number withput using + operator
+//
+    int a=0,b=0;
+    printf("Enter value A:");
+    scanf("%d",&a);
+    printf("Enter value B:");
+    scanf("%d",&b);
+    if(a<0 && b>=0){
+        while(a!=-1){
+            
+            a++;
+            b--;
+            if(b==0){
+                b=-1;
+                continue;
+            }
         }
-        res=res+pow;
-        q=q/10;
+        printf("The addition value is 4:%d\n",b);  
     }
-    if(res==num)
-        printf("The given number is palindrom");
-    else
-        printf("Not palindrom");
+    else if (b<0 && a>=0)
+    {
+         while(b!=-1){
+            b++;
+            a--;
+            if(a==0){
+                a=-1;
+                continue;
+            }
+        }
+        printf("The addition value is 4:%d\n",a);  
+    }
+    else if (a<0 && b<0)
+    {
+         while(b!=0){
+            a--;
+            b++;
+        }
+        printf("The addition value is 4:%d\n",a);  
+    }
+    else{
+         while(b!=0){
+            a++;
+            b--;
+        } 
+        printf("The addition value is 4:%d\n",a);  
+    }
+    
+
+
     return 0;
 }
 

@@ -477,30 +477,43 @@ int main(void){
 //
 //wirite a porogramm to add two nuners woithout using + operator
 //
-    int a,b,sum=0,carry=0;
-    printf("Enter a value:");
-    scanf("%d",&a);
-    printf("Enter vlue B:");
-    scanf("%d",&b);
-    while(b!=0){
-        sum=a^b;
-        carry=(a&b)<<1;
-        a=sum;
-        b=carry;
-    }
-    printf("The addition of two number is:%d\n",a);
+    // int a,b,sum=0,carry=0;
+    // printf("Enter a value:");
+    // scanf("%d",&a);
+    // printf("Enter vlue B:");
+    // scanf("%d",&b);
+    // while(b!=0){
+    //     sum=a^b;
+    //     carry=(a&b)<<1;
+    //     a=sum;
+    //     b=carry;
+    // }
+    // printf("The addition of two number is:%d\n",a);
 //
 //write aprogramm to print the upto to n number odf febinnosi series
 //  
-     int i,a,num=0,temp1=0,temp2=1;
-    printf("Enter a value:");
-    scanf("%d",&a);
-  for(i=1;i<=a;i++)
-       { printf("%d-",temp1);
-        num=temp1+temp2;
-        temp1=temp2;
-        temp2=num;
- }
+//     int i,a,num=0,temp1=0,temp2=1;
+//     printf("Enter a value:");
+//     scanf("%d",&a);
+//     for(i=1;i<=a;i++)
+//       { printf("%d-",temp1);
+//        num=temp1+temp2;
+//        temp1=temp2;
+//        temp2=num;
+//  }
+
+//floyd's programm
+//
+    int i,j,num=1,row;
+    printf("enter number of rows:");
+    scanf("%d",&row);
+    for(i=1;i<=row;i++){
+        for(j=1;j<=i;j++){
+            printf("%d",num);
+            num++;
+        }
+        printf("\n");
+    }
 
 
 
@@ -515,7 +528,7 @@ int main(void){
 //     printf("the value is:%d\n",var2);
 // // normal variable in function it becomes zero after function ends each time wee call the function it ony zero.
 //     int var2=0;
-//     var2=var2+1;
+//     var2=var2+1;`
 //     printf("the value is:%d\n",var2);
 
 // }

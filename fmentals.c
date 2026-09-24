@@ -429,52 +429,66 @@ int main(void){
 //
 //addin two number withput using + operator
 //
-    int a=0,b=0;
-    printf("Enter value A:");
-    scanf("%d",&a);
-    printf("Enter value B:");
-    scanf("%d",&b);
-    if(a<0 && b>=0){
-        while(a!=-1){
+    // int a=0,b=0;
+    // printf("Enter value A:");
+    // scanf("%d",&a);
+    // printf("Enter value B:");
+    // scanf("%d",&b);
+    // if(a<0 && b>=0){
+    //     while(a!=-1){
             
-            a++;
-            b--;
-            if(b==0){
-                b=-1;
-                continue;
-            }
-        }
-        printf("The addition value is 4:%d\n",b);  
-    }
-    else if (b<0 && a>=0)
-    {
-         while(b!=-1){
-            b++;
-            a--;
-            if(a==0){
-                a=-1;
-                continue;
-            }
-        }
-        printf("The addition value is 4:%d\n",a);  
-    }
-    else if (a<0 && b<0)
-    {
-         while(b!=0){
-            a--;
-            b++;
-        }
-        printf("The addition value is 4:%d\n",a);  
-    }
-    else{
-         while(b!=0){
-            a++;
-            b--;
-        } 
-        printf("The addition value is 4:%d\n",a);  
-    }
-    
+    //         a++;
+    //         b--;
+    //         if(b==0){
+    //             b=-1;
+    //             continue;
+    //         }
+    //     }
+    //     printf("The addition value is 4:%d\n",b);  
+    // }
+    // else if (b<0 && a>=0)
+    // {
+    //      while(b!=-1){
+    //         b++;
+    //         a--;
+    //         if(a==0){
+    //             a=-1;
+    //             continue;
+    //         }
+    //     }
+    //     printf("The addition value is 4:%d\n",a);  
+    // }
+    // else if (a<0 && b<0)
+    // {
+    //      while(b!=0){
+    //         a--;
+    //         b++;
+    //     }
+    //     printf("The addition value is 4:%d\n",a);  
+    // }
+    // else{
+    //      while(b!=0){
+    //         a++;
+    //         b--;
+    //     } 
+    //     printf("The addition value is 4:%d\n",a);  
+    // }
 
+//
+//wirite a porogramm to add two nuners woithout using + operator
+//
+    int a,b,sum=0,carry=0;
+    printf("Enter a value:");
+    scanf("%d",&a);
+    printf("Enter vlue B:");
+    scanf("%d",&b);
+    while(b!=0){
+        sum=a^b;
+        carry=(a&b)<<1;
+        a=sum;
+        b=carry;
+    }
+    printf("The addition of two number is:%d\n",a);
 
     return 0;
 }

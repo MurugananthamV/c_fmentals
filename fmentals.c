@@ -477,18 +477,34 @@ int main(void){
 //
 //wirite a porogramm to add two nuners woithout using + operator
 //
-    int a,b,sum=0,carry=0;
+    // int a,b,sum=0,carry=0;
+    // printf("Enter a value:");
+    // scanf("%d",&a);
+    // printf("Enter vlue B:");
+    // scanf("%d",&b);
+    // while(b!=0){
+    //     sum=a^b;
+    //     carry=(a&b)<<1;
+    //     a=sum;
+    //     b=carry;
+    // }
+    // printf("The addition of two number is:%d\n",a);
+//
+//write aprogramm to print the upto to n number odf febinnosi series
+//  
+     int a,num=0,temp1=0,temp2=1;
     printf("Enter a value:");
     scanf("%d",&a);
-    printf("Enter vlue B:");
-    scanf("%d",&b);
-    while(b!=0){
-        sum=a^b;
-        carry=(a&b)<<1;
-        a=sum;
-        b=carry;
+    while(num<=a){  
+        printf("%d-",temp1);
+        num=temp1+temp2;
+        temp1=temp2;
+        temp2=num;
+  
     }
-    printf("The addition of two number is:%d\n",a);
+
+
+
 
     return 0;
 }

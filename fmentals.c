@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <limits.h>
 #include <stdlib.h>
+#include <math.h>
 // static int var1;//global static is use to restrict the acces from another file.
 //
 //===========================Constants
@@ -504,17 +505,30 @@ int main(void){
 
 //floyd's programm
 //
-    int i,j,num=1,row;
-    printf("enter number of rows:");
-    scanf("%d",&row);
-    for(i=1;i<=row;i++){
-        for(j=1;j<=i;j++){
-            printf("%d",num);
-            num++;
-        }
-        printf("\n");
+    // int i,j,num=1,row;
+    // printf("enter number of rows:");
+    // scanf("%d",&row);
+    // for(i=1;i<=row;i++){
+    //     for(j=1;j<=i;j++){
+    //         printf("%d",num);
+    //         num++;
+    //     }
+    //     printf("\n");
+    // }
+//
+//Binary to decimal conversion usiong c programming
+//
+    int binary,num=0,rem,b=1,bin;
+    printf("enter the binary number:");
+    scanf("%d",&binary);
+    bin=binary;
+    while(binary!=0){
+        rem=binary%10;
+        num=num+rem*b;
+        binary=binary/10;
+        b=b*2;
     }
-
+    printf("Decimal value is :%d",num);
 
 
 

@@ -25,6 +25,7 @@
 //function [problem 1]
 //
 // int func(int num);
+i
 int main(void){
     
     // int var=4;
@@ -548,19 +549,43 @@ int main(void){
 //
 //function problem 3
 //
-    for(func();func();func())
-    printf("%d",func());
+    // for(func();func();func())
+    // printf("%d",func());
+//
+//Static function and dynamin scop
+//
+    a=fun1();
+    fun2();
+
     return 0;
+}
+
+int a,b;
+int fun1();
+void fun2();
+void print();
+void print(){
+    printf("%d%d",a,b);
+}
+int fun1(){
+    int a,c;
+    a=0;b=1;c=2;
+    return c;
+}
+void fun2(){
+    int b;
+    a=3;b=4;
+    print();
 }
 //
 //function problem 3
 //
-int func();
-int func(){
-    static int num=16;
-    return num--;
-}
-//
+// int func();
+// int func(){
+//     static int num=16;
+//     return num--;
+// }
+// 
 //function problem 2
 //
 //

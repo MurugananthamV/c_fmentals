@@ -21,6 +21,11 @@
 // static int var;//stored in bss
 // static int var=30;//move to initialized
 // static int var;
+//
+//function
+//
+
+int func(int num);
 int main(void){
     
     // int var=4;
@@ -517,24 +522,35 @@ int main(void){
     // }
 //
 //Binary to decimal conversion usiong c programming
+// //
+//     int binary,num=0,rem,b=1,bin;
+//     printf("enter the binary number:");
+//     scanf("%d",&binary);
+//     bin=binary;
+//     while(binary!=0){
+//         rem=binary%10;
+//         num=num+rem*b;
+//         binary=binary/10;
+//         b=b*2;
+//     }
+//     printf("Decimal value is :%d",num);
+
 //
-    int binary,num=0,rem,b=1,bin;
-    printf("enter the binary number:");
-    scanf("%d",&binary);
-    bin=binary;
-    while(binary!=0){
-        rem=binary%10;
-        num=num+rem*b;
-        binary=binary/10;
-        b=b*2;
-    }
-    printf("Decimal value is :%d",num);
-
-
-
+// function problem
+//
+    printf("%d",func(435));
     return 0;
 }
 
+int func(int num)
+{
+    int count=2;
+    while(num){
+        count++;
+        num>>=2;
+    }
+    return count;
+}
 // int increment(){
 // //static preser the value between calls
 //     static int var2;

@@ -22,10 +22,9 @@
 // static int var=30;//move to initialized
 // static int var;
 //
-//function
+//function [problem 1]
 //
-
-int func(int num);
+// int func(int num);
 int main(void){
     
     // int var=4;
@@ -536,21 +535,55 @@ int main(void){
 //     printf("Decimal value is :%d",num);
 
 //
-// function problem
+// function problem1
 //
-    printf("%d",func(435));
+    // printf("%d",func(435));
+//
+//problem 2
+//
+    // int a=4,b=5,c=6;
+    // f1(a,b);
+    // f2(&b,&c);
+    // printf("%d",c-a-b);
+//
+//function problem 3
+//
+    for(func();func();func())
+    printf("%d",func());
     return 0;
 }
-
-int func(int num)
-{
-    int count=2;
-    while(num){
-        count++;
-        num>>=2;
-    }
-    return count;
+//
+//function problem 3
+//
+int func();
+int func(){
+    static int num=16;
+    return num--;
 }
+//
+//function problem 2
+//
+//
+// void f1(int a,int b);
+// void f1(int a,int b){
+//     int c;
+//     c=a,a=b,b=c;
+// }
+// void f2(int *a,int *b);
+// void f2(int *a,int *b){
+//     int c;
+//     c=*a,*a=*b,*b=c;
+// }
+//function problem1
+// int func(int num)
+// {
+//     int count=2;
+//     while(num){
+//         count++;
+//         num>>=2;
+//     }
+//     return count;
+// }
 // int increment(){
 // //static preser the value between calls
 //     static int var2;

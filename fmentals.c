@@ -25,8 +25,7 @@
 //function [problem 1]
 //
 // int func(int num);
-i
-int main(void){
+// int main(void){
     
     // int var=4;
     // int var1=1;
@@ -551,32 +550,63 @@ int main(void){
 //
     // for(func();func();func())
     // printf("%d",func());
-//
-//Static function and dynamin scop
-//
-    a=fun1();
-    fun2();
 
+//     return 0;
+// }
+//
+//========================================overall main function used
+//
+//
+
+//
+//recursion
+//  
+
+
+int c=0;
+void fun(int);
+void main(){
+
+    int n=0;
+    scanf("%d",&n);
+    fun(n);
+    printf("%d",c);
     return 0;
 }
+void fun(int n){
+    if(n>1){
+        fun(n-1);
+        }
+    for(int i=0;i<n;i++){
+        printf("*");
+        c++;
+        }
+    }
+//
+//Static and dynamic
+//
+//  #include <stdio.h>
+// int a,b;
+// int main(){
+//     a=fun1();
+//     fun2();
+//     return 0;
+// }
 
-int a,b;
-int fun1();
-void fun2();
-void print();
-void print(){
-    printf("%d%d",a,b);
-}
-int fun1(){
-    int a,c;
-    a=0;b=1;c=2;
-    return c;
-}
-void fun2(){
-    int b;
-    a=3;b=4;
-    print();
-}
+
+// void print(){
+//     printf("%d%d",a,b);
+// }
+// int fun1(){
+//     int a,c;
+//     a=0;b=1;c=2;
+//     return c;
+// }
+// void fun2(){
+//     int b;
+//     a=3;b=4;
+//     print();
+// }
 //
 //function problem 3
 //

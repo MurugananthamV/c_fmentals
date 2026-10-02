@@ -564,8 +564,8 @@
 
 
 int c=0;
-void fun(int);
-void main(){
+int fun(int);
+int main(){
 
     int n=0;
     scanf("%d",&n);
@@ -573,7 +573,7 @@ void main(){
     printf("%d",c);
     return 0;
 }
-void fun(int n){
+int fun(int n){
     if(n>1){
         fun(n-1);
         }

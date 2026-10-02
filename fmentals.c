@@ -587,24 +587,43 @@
 //=======================================RECURSION
 //
 //
-#include <stdio.h>
+// #include <stdio.h>
 
-void get(int n)
-{
-    if (n < 1)
-        return;
+// void get(int n)
+// {
+//     if (n < 1)
+//         return;
 
-    get(n - 1);
-    get(n - 3);
+//     get(n - 1);
+//     get(n - 3);
 
-    printf("%d ", n);
-}
+//     printf("%d ", n);
+// }
 
-int main()
-{
-    get(4);
+// int main()
+// {
+//     get(4);
 
+//     return 0;
+// }
+//
+//========================
+void fun(int);
+int k=0;
+int main(){
+    fun(10);
+    printf("%d",k);
     return 0;
+}
+void fun(int n){
+    int i=0;
+    if(n>1){
+        fun(n-1);
+    }
+    for(i=0;i<n;i++){
+        printf("*");
+        k++;
+    }
 }
 //
 //Static and dynamic

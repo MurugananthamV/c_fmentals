@@ -661,19 +661,59 @@
 // //
 //
 //=============Two dimentional array
+// int main(){
+//     int l=0;
+//     int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+//     l=sizeof(arr)/sizeof(arr[0]);
+//     for(int i=0;i<l;i++){
+//         for(int j=0;j<l;j++){
+//             printf("%d ",arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+// }
+//
+//==============two 2 dimensional arra
+// int main(){
+//     int row=0;
+//     int col=0;
+//     int arr[2][3]={{1,2,3},{4,5,6}};
+//     row=sizeof(arr)/sizeof(arr[0]);
+//     col=sizeof(arr[0])/sizeof(arr[0][0]);
+//     for(int i=0;i<row;i++){
+//         for(int j=0;j<col;j++){
+//             printf("%d ",arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+// }
+//
+//==========multie dimensional array====
+//
 int main(){
-    int l=0;
-    int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}};
-    l=sizeof(arr)/sizeof(arr[0]);
-    for(int i=0;i<l;i++){
-        for(int j=0;j<l;j++){
-            printf("%d ",arr[i][j]);
+    int row=0;
+    int col=0;
+    int num=0;
+    int arr[2][2][3]={{{1,2,3},{4,5,6}},{{1,2,3},{4,5,6}}};
+    num=sizeof(arr)/sizeof(arr[0]);
+    row=sizeof(arr[0])/sizeof(arr[0][0]);
+    col=sizeof(arr[0][0])/sizeof(arr[0][0][0]);
+
+    for(int i=0;i<num;i++){
+        printf("\n");
+        for(int j=0;j<row;j++){
+            
+            for(int k=0;k<col;k++){
+            printf("%d ",arr[i][j][k]);
+            }
+            printf("\n");
+            
         }
         printf("\n");
+        
+        
     }
 }
-//
-//
 
 //Static and dynamic
 //

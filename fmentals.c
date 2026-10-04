@@ -627,24 +627,24 @@
 // }
 //
 //===========One dimenssional array using macros and reverthe array
-void arr(int l,int ar[],int a){
-    if(a==l){
-        return;
-    }
-    else{
-        arr(l,ar,a+1);
-        printf("%d,",ar[a]);
-        return;
-    }
-}
-int l=0;
-int main(){
-    int a=0;
-    int ar[]={34,56,54,32,67,89,90,31,21};
-    int l=sizeof(ar)/sizeof(ar[0]);
-    arr(l,ar,a);
-    return 0;
-}
+// void arr(int l,int ar[],int a){
+//     if(a==l){
+//         return;
+//     }
+//     else{
+//         arr(l,ar,a+1);
+//         printf("%d,",ar[a]);
+//         return;
+//     }
+// }
+// int l=0;
+// int main(){
+//     int a=0;
+//     int ar[]={34,56,54,32,67,89,90,31,21};
+//     int l=sizeof(ar)/sizeof(ar[0]);
+//     arr(l,ar,a);
+//     return 0;
+// }
 //
 //========second method
 //
@@ -660,7 +660,21 @@ int main(){
 // }
 // //
 //
+//=============Two dimentional array
+int main(){
+    int l=0;
+    int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+    l=sizeof(arr)/sizeof(arr[0]);
+    for(int i=0;i<l;i++){
+        for(int j=0;j<l;j++){
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+    }
+}
 //
+//
+
 //Static and dynamic
 //
 //  #include <stdio.h>

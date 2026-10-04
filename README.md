@@ -26,5 +26,9 @@ C programming
         # int arr[5]={[0]=1,[4]=3}
         #expect that index 0 and 4 alle are 0.
         # int arr[]={1,2,3,[5]=1,5,6,[10]=3} this also allowed remainng should be zero.if leanth is not spfied automatically set to maximum designated value of an array.
-        #
-        # 
+    #leanth of array
+        #sizeof(array name)/sizeof(array[0])=leangth of the array 
+#=====multie dimensional arrays====
+    #data_type name_array[size1][size2][size3]....[sizen ]
+#=====two dimensionla array========
+    #int arr[3][3]={{1,2,3},{4,5,6}}

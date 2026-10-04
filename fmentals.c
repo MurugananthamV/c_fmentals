@@ -608,22 +608,55 @@
 // }
 //
 //========================
-void fun(int);
-int k=0;
+// void fun(int);
+// int k=0;
+// int main(){
+//     fun(10);
+//     printf("%d",k);
+//     return 0;
+// }
+// void fun(int n){
+//     int i=0;
+//     if(n>1){
+//         fun(n-1);
+//     }
+//     for(i=0;i<n;i++){
+//         printf("*");
+//         k++;
+//     }
+// }
+//
+//===========One dimenssional array using macros and reverthe array
+// void arr(int l,int ar[],int a){
+//     if(a==l){
+//         return;
+//     }
+//     else{
+//         arr(l,ar,a+1);
+//         printf("%d,",ar[a]);
+//         return;
+//     }
+// }
+// int l=0;
+// int main(){
+//     int a=0;
+//     int ar[]={34,56,54,32,67,89,90,31,21};
+//     int l=sizeof(ar)/sizeof(ar[0]);
+//     arr(l,ar,a);
+//     return 0;
+// }
+//
+//========second method
+//
+//
 int main(){
-    fun(10);
-    printf("%d",k);
+    int a=0;
+    int ar[]={34,56,54,32,67,89,90,31,21};
+    int l=sizeof(ar)/sizeof(ar[0]);
+    for(int i=l-1;i>=0;i--){
+        printf("%d,",ar[i]);
+    }
     return 0;
-}
-void fun(int n){
-    int i=0;
-    if(n>1){
-        fun(n-1);
-    }
-    for(i=0;i<n;i++){
-        printf("*");
-        k++;
-    }
 }
 //
 //Static and dynamic

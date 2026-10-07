@@ -34,4 +34,6 @@ C programming
     #int arr[3][3]={{1,2,3},{4,5,6}}
 #=====multie dimensional array====
     #int arr[no of arr][row][colums]={{{1,2,3},{2,4,5}},{4,6,7},{4,5,6}};
-#=====
+#=====when we all or intiualize or pass the array to function it need column size
+    #becuase when we all arr[][] c need colum size to calculate to find the address of the each elemnet
+    #Formula is address = starting_address + (i × number_of_columns + j)

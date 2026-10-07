@@ -690,29 +690,71 @@
 //
 //==========multie dimensional array====
 //
-int main(){
-    int row=0;
-    int col=0;
-    int num=0;
-    int arr[2][2][3]={{{1,2,3},{4,5,6}},{{1,2,3},{4,5,6}}};
-    num=sizeof(arr)/sizeof(arr[0]);
-    row=sizeof(arr[0])/sizeof(arr[0][0]);
-    col=sizeof(arr[0][0])/sizeof(arr[0][0][0]);
+// int main(){
+//     int row=0;
+//     int col=0;
+//     int num=0;
+//     int arr[2][2][3]={{{1,2,3},{4,5,6}},{{1,2,3},{4,5,6}}};
+//     num=sizeof(arr)/sizeof(arr[0]);
+//     row=sizeof(arr[0])/sizeof(arr[0][0]);
+//     col=sizeof(arr[0][0])/sizeof(arr[0][0][0]);
 
-    for(int i=0;i<num;i++){
-        printf("\n");
-        for(int j=0;j<row;j++){
+//     for(int i=0;i<num;i++){
+//         printf("\n");
+//         // for(int j=0;j<row;j++){
             
-            for(int k=0;k<col;k++){
-            printf("%d ",arr[i][j][k]);
-            }
-            printf("\n");
+//             for(int k=0;k<col;k++){
+//             printf("%d ",arr[i][j][k]);
+//             }
+//             printf("\n");
             
+//         }
+//         printf("\n");
+        
+        
+//     }
+// }
+//
+//==============Programm to read 5x5 array
+//
+int row(int a[][5],int ln);
+int col(int a[][5],int ln);
+int main(){
+    int a[5][5]={
+        {2,4,5,6,5},
+        {4,7,9,3,6},
+        {1,2,3,5,7},
+        {8,5,3,1,5},
+        {3,6,8,2,8}
+    };
+    int ln=sizeof(a)/sizeof(a[0]);
+    row(a,ln);
+    printf("\n");
+    col(a,ln);
+}
+int row(int a[][5],int ln){
+    int sum=0;
+    printf("Row Toatal:");
+    for(int i=0;i<ln;i++){
+        for(int j=0;j<ln;j++){
+            sum+=a[i][j];
         }
-        printf("\n");
-        
-        
+        printf(" %d",sum);
+        sum=0;
     }
+    return 0;
+}
+int col(int a[][5],int ln){
+    int sum=0;
+    printf("Row Toatal:");
+    for(int i=0;i<ln;i++){
+        for(int j=0;j<ln;j++){
+            sum+=a[j][i];
+        }
+        printf(" %d",sum);
+        sum=0;
+    }
+    return 0;
 }
 
 //Static and dynamic

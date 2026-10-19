@@ -717,45 +717,110 @@
 //
 //==============Programm to read 5x5 array
 //
-int row(int a[][5],int ln);
-int col(int a[][5],int ln);
+// int row(int a[][5],int ln);
+// int col(int a[][5],int ln);
+// int main(){
+//     int a[5][5]={
+//         {2,4,5,6,5},
+//         {4,7,9,3,6},
+//         {1,2,3,5,7},
+//         {8,5,3,1,5},
+//         {3,6,8,2,8}
+//     };
+//     int ln=sizeof(a)/sizeof(a[0]);
+//     row(a,ln);
+//     printf("\n");
+//     col(a,ln);
+// }
+// int row(int a[][5],int ln){
+//     int sum=0;
+//     printf("Row Toatal:");
+//     for(int i=0;i<ln;i++){
+//         for(int j=0;j<ln;j++){
+//             sum+=a[i][j];
+//         }
+//         printf(" %d",sum);
+//         sum=0;
+//     }
+//     return 0;
+// }
+// int col(int a[][5],int ln){
+//     int sum=0;
+//     printf("Row Toatal:");
+//     for(int i=0;i<ln;i++){
+//         for(int j=0;j<ln;j++){
+//             sum+=a[j][i];
+//         }
+//         printf(" %d",sum);
+//         sum=0;
+//     }
+//     return 0;
+// }
+//
+//
+//================Matrix multiplication in array
+//
+//
+#define MAX 10
+void get(int matrix[MAX][MAX],int row,int col);
+void mul(int matrix[MAX][MAX],int matrix1[MAX][MAX],int row,int col,int acol,int final[MAX][MAX]);
+int num=1;
+int i,j,k;
+int arow,acolumn;
+int brow,bcolumn;
+int fin[MAX][MAX];
+int arr1[MAX][MAX];
+int arr2[MAX][MAX];
 int main(){
-    int a[5][5]={
-        {2,4,5,6,5},
-        {4,7,9,3,6},
-        {1,2,3,5,7},
-        {8,5,3,1,5},
-        {3,6,8,2,8}
-    };
-    int ln=sizeof(a)/sizeof(a[0]);
-    row(a,ln);
-    printf("\n");
-    col(a,ln);
-}
-int row(int a[][5],int ln){
-    int sum=0;
-    printf("Row Toatal:");
-    for(int i=0;i<ln;i++){
-        for(int j=0;j<ln;j++){
-            sum+=a[i][j];
-        }
-        printf(" %d",sum);
-        sum=0;
+    printf("ENTER THE ROW AND COLUMN OF THE ARRAY A:\n");
+    scanf("%d %d",&arow,&acolumn);
+    printf("ENTER THE ROW AND COLUMN OF THE ARRAY B:\n");
+    scanf("%d %d",&brow,&bcolumn);
+    get(arr1,arow,acolumn);
+    get(arr2,brow,bcolumn);
+    if(acolumn!=brow){
+        printf("there is problem with array size so we cant multiuply!");
     }
-    return 0;
-}
-int col(int a[][5],int ln){
-    int sum=0;
-    printf("Row Toatal:");
-    for(int i=0;i<ln;i++){
-        for(int j=0;j<ln;j++){
-            sum+=a[j][i];
-        }
-        printf(" %d",sum);
-        sum=0;
+    else{
+        mul(arr1,arr2,arow,bcolumn,acolumn,fin);
     }
+    for(int i=0;i<arow;i++){
+        for(int j=0;j<bcolumn;j++){
+            printf("%d ",fin[i][j]);
+        }
+        printf("\n");
+    }
+    printf("                                                  ==============\n");
+    printf("                                                  |  THANK YOU |\n");
+    printf("                                                  ==============\n");
+
+    
     return 0;
+   
 }
+void get(int arr[MAX][MAX],int a,int b){
+    printf("Enter the Elemnet of the Array %d:\n");
+     for(int i=0;i<a;i++){
+        for(int j=0;j<b;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    num++;
+}
+void mul(int matrix[MAX][MAX],int matrix1[MAX][MAX],int a, int b, int c,int fin[MAX][MAX]){
+    for(int i=0;i<a;i++){
+        for(int j=0;j<b;j++){
+            int sum=0;
+            for(int k=0;k<c;k++){
+                sum+=matrix[i][k]*matrix1[k][j];
+            }
+            fin[i][j]=sum;
+        }
+    }
+
+}
+
+
 
 //Static and dynamic
 //
